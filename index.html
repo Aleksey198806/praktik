@@ -5,37 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Raleway:wght@700&family=Roboto:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <a href="./index.html"
-        ><img
-          src="./image/Vector.svg"
-          width="27"
-          height="38"
-          alt="logo"
-        />appello</a
-      >
-      <nav>
-        <ul>
-          <li><a href=""></a>Home</li>
-          <li><a href=""></a>Portfolio</li>
-          <li><a href=""></a>Process</li>
-          <li><a href=""></a>Team</li>
-          <li><a href=""></a>Resources</li>
-        </ul>
-      </nav>
-      <button type="submit">View our work</button>
+    <header class="header">
+      <div class="header-content container">
+        <a href="./index.html" class="logo"
+          ><img src="./img/logo.svg" alt="logo" class="header-img" />Appello</a
+        >
+        <nav class="header-nav">
+          <ul class="header-list">
+            <li class="header-list-item">
+              <a href="@" class="header-link">Home</a>
+            </li>
+            <li class="header-list-item">
+              <a href="@" class="header-link">Portfolio</a>
+            </li>
+            <li class="header-list-item">
+              <a href="@" class="header-link">Process</a>
+            </li>
+            <li class="header-list-item">
+              <a href="@" class="header-link">Team</a>
+            </li>
+            <li class="header-list-item">
+              <a href="@" class="header-link">Resources</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="header-btn">Get project quote</button>
+      </div>
     </header>
     <main>
-      <!--Герой -->
-      <h1>Leaders in Software Design & Development</h1>
-      <p>
-        Establishing a technology company takes a strong software team to
-        deliver on what needs to be done.
-      </p>
-      <a href="./">View our work</a>
-      <!--Your reliable web and app development partner-->
+      <section class="hero">
+        <div>
+          <h1 class="hero-title">Leaders in Software Design & Development</h1>
+          <p class="hero-text">
+            Establishing a technology company takes a strong software team to
+            deliver on what needs to be done.
+          </p>
+          <a class="hero-link" href="@">View our work</a>
+        </div>
+      </section>
       <section>
         <h2>Your reliable web and app development partner</h2>
         <p>
@@ -45,13 +65,12 @@
         <ul>
           <li>Completely tailored software.</li>
           <li>Daily support with project manager.</li>
-          <li>Projects delivered on time, always.</li>
           <li>Testing and quality assurance.</li>
+          <li>Projects delivered on time, always.</li>
           <li>Professional marketing expertise.</li>
           <li>Transparent costs and support.</li>
         </ul>
       </section>
-      <!--Where are you now?-->
       <section>
         <h2>Where are you now?</h2>
         <p>
@@ -59,13 +78,14 @@
           to move on to the next phase of your project.
         </p>
         <ul>
-          <li><button>Design</button></li>
-          <li><button>Develop</button></li>
-          <li><button>Launch</button></li>
+          <li><button type="button">Design</button></li>
+          <li><button type="button">Develop</button></li>
+          <li><button type="button">Launch</button></li>
         </ul>
+
         <ul>
           <li>
-            <h3>Research</h3>
+            <h3>1. Research</h3>
             <p>
               We can help you to better understand your target audience,
               enabling you to create a more powerful value proposition for your
@@ -73,14 +93,14 @@
             </p>
           </li>
           <li>
-            <h3>Requirements</h3>
+            <h3>2. Requirements</h3>
             <p>
               Based on research insights, we can help you to determine how your
               product and service should function.
             </p>
           </li>
           <li>
-            <h3>UI Design</h3>
+            <h3>3. UI Design</h3>
             <p>
               We’re able to create unique and aesthetically pleasing visual
               design solutions that fulfil both your user needs and business
@@ -96,20 +116,33 @@
             </p>
           </li>
         </ul>
-        <a href="#">Contact us</a>
+        <a href="">Contact us</a>
       </section>
-      <!--We’re proud of our work-->
       <section>
         <h2>We’re proud of our work</h2>
         <ul>
-          <li><p>50+ Successfully completed projects</p></li>
-          <li><p>35+ Happy and appreciative customers</p></li>
-          <li><p>10 Combined years of experience</p></li>
-          <li><p>23+ Experienced and talented workers</p></li>
+          <li>
+            <p><span>50+</span>Successfully completed projects</p>
+          </li>
+          <li>
+            <p><span>35+</span>Happy and appreciative customers</p>
+          </li>
+          <li>
+            <p><span>10</span>Combined years of experience</p>
+          </li>
+          <li>
+            <p><span>23</span>Experienced and talented workers</p>
+          </li>
         </ul>
+
         <ul>
           <li>
-            <img src="./image/image.jpg" alt="" width="545" />
+            <img
+              src="./img/img1.jpg"
+              alt="Eyetelligence – AI-based Eye Health"
+              width="545"
+              height="402"
+            />
             <h3>Eyetelligence – AI-based Eye Health</h3>
             <p>
               Eyetelligence is a medtech company using AI based software to
@@ -118,7 +151,12 @@
             </p>
           </li>
           <li>
-            <img src="./image/image1.jpg" alt="" width="545" />
+            <img
+              src="./img/img2.jpg"
+              alt="Give + Get – Charity Challenger App"
+              width="545"
+              height="402"
+            />
             <h3>Give + Get – Charity Challenger App</h3>
             <p>
               Give + Get is a modern charity app. “Give”, while joining a
@@ -127,7 +165,12 @@
             </p>
           </li>
           <li>
-            <img src="./image/image2.jpg" alt="" width="545" />
+            <img
+              src="./img/img3.png"
+              alt="Voken – Shared Childcare App"
+              width="545"
+              height="402"
+            />
             <h3>Voken – Shared Childcare App</h3>
             <p>
               Voken lets people arrange childcare with families they trust, earn
@@ -135,7 +178,12 @@
             </p>
           </li>
           <li>
-            <img src="./image/image3.jpg" alt="" width="545" />
+            <img
+              src="./img/img4.jpg"
+              alt="hattii – Disability Dating App"
+              width="545"
+              height="402"
+            />
             <h3>Chattii – Disability Dating App</h3>
             <p>
               Chattii is born from the need to provide a space for people living
@@ -146,6 +194,5 @@
         <button type="button">See more</button>
       </section>
     </main>
-    <footer></footer>
   </body>
 </html>
